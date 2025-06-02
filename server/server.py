@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify, render_template
 import util
 import base64
+import os
 
 # Create Flask app and serve static files correctly
 app = Flask(
@@ -51,4 +52,4 @@ def classify_image():
 if __name__ == "__main__":
     print("Starting Python Flask Server For Sports Celebrity Image Classification")
     util.load_saved_artifacts()
-    app.run(port=5000, debug=True)
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)), debug=True)
