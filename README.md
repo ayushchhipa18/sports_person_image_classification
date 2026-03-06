@@ -155,7 +155,6 @@ Upload an image and view the prediction.
 
 ---
 
-# 📷 Example Prediction
 
 # 📷 Example Predictions
 
